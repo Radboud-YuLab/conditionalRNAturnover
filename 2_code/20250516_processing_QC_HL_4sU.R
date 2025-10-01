@@ -112,13 +112,6 @@ hl_removed_min_log10 <- tibble::column_to_rownames(hl_removed_min_log10, var = c
 
 
 # 4. compile agarwal and mulder dataset
-# NOTE: two parts, one is a subset, the other is complete
-# most analysis done on subset
-
-# subset
-merged_df_a.studies_mulder <- merge(hl_removed_min_log10, a.studies.4sU_select, by = 0)
-merged_df_a.studies_mulder <- tibble::column_to_rownames(merged_df_a.studies_mulder, var = "Row.names")
-saveRDS(merged_df_a.studies_mulder, here("4_processed_data/subset/20250516_hl_4sU_subset.RDS"))
 
 # complete
 merged_df_a.studies_mulder_complete <- merge(hl_removed_min_log10, a.studies.4sU_select, by = 0, all = TRUE)

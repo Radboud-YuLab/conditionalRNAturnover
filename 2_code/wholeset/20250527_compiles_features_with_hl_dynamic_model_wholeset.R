@@ -18,7 +18,7 @@ length(unique(hl.static$ensembl_gene_id))
 
 
 # append progeny scores
-progeny_scores <- readRDS("data_KC_A/derived_data/dynamic_features/progeny/compiled/unscaled/20240910_progeny_results_all_mean_per_condition_unscaled.RDS")
+progeny_scores <- readRDS("4_processed_data/wholeset/progeny/unscaled/20240910_progeny_results_all_mean_per_condition_unscaled.RDS")
 progeny_scores_df <- as.data.frame(progeny_scores)
 
 # add prefix 
